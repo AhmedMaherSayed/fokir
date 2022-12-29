@@ -1,0 +1,347 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.homePage
+{
+    color: #fff;
+  background: url('img/slider/slider-01.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+}
+.homePage::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.nav
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    
+    
+    
+}
+#color-red
+{
+    color: #ff305b;
+}
+.nav ul
+{
+    list-style-type: none;
+    padding: 20px;
+    font-size: large;
+    position: absolute;
+    right: 20%;
+    
+}
+.nav li
+{
+    padding-left: 20px;
+  display: inline;
+}
+.nav a {
+    transition: all 1s;
+  }
+  .nav a:hover {
+    color: #ff305b;
+  }
+.fokir
+{
+    float: left;
+    font-weight: bold;
+  color: #ff305b;
+  padding: 15px;
+  font-size: 15px;
+  position: absolute;
+  left: 20%;
+  
+}
+.navbar
+{
+    float: right;
+}
+.homePageContent
+{
+    
+    position: absolute;
+    z-index: 99;
+    color: #f1f1f1;
+    left: 40%;
+    top:50%;
+    
+}
+.homePageContent h1{
+    margin: 20px 0px;
+    color: #ff305b;
+    font-size: 50px;
+    
+}
+.typing
+{
+    margin-top: 40px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: 200;
+   
+}
+.typing::after{
+    content: '|';
+    animation-name: type;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes type {
+    0%{content: ' |'}
+    2.8%{content: 'D|'}
+    5.6%{content: 'De|'}
+    8.4%{content: 'Des|'}
+    11.2%{content: 'Desi|'}
+    14%{content: 'Desig|'}
+    16.8%{content: 'Design|'}
+    19.6%{content: 'Designe|'}
+    22.4%{content: 'Designer|'}
+
+    25.2%{content: 'Designe|'}
+    28%{content: 'Design|'}
+    30.8%{content: 'Desig|'}
+    33.6%{content: 'Desi|'}
+    36.4%{content: 'Des|'}
+    39.2%{content: 'De|'}
+    42%{content: 'D|'}
+    44.8%{content: '|'}
+    
+
+
+    47.6%{content: 'D|'}
+    50.4%{content: 'De|'}
+    53.2%{content: 'Dev|'}
+    56%{content: 'Deve|'}
+    58.8%{content: 'Devel|'}
+    61.6%{content: 'Develo|'}
+    64.4%{content: 'Develop|'}
+    67.2%{content: 'Develope|'}
+    70%{content: 'Developer|'}
+
+    72.8%{content: 'Develope|'}
+    75.6%{content: 'Develop|'}
+    78.4%{content: 'Develo|'}
+    81.2%{content: 'Devel|'}
+    84%{content: 'Deve|'}
+    86.8%{content: 'Dev|'}
+    89.6%{content: 'De|'}
+    95.2%{content: 'D|'}
+    100%{content: '|'}
+
+
+    
+
+    
+}
+
+hr
+{
+    border-top: 1px solid #ff305b;
+  width: 30px;
+  margin: auto;
+  margin-top: 4px;
+}
+p {
+    padding: 15px 0;
+    line-height: 1.4em;
+    color: #555555;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+/* About */
+.About
+{
+    
+    padding: 40px 0px;
+    
+}
+.img
+{
+    float: left;
+    width: 50%;
+    
+}
+.aboutContent
+{
+    float: left;
+    width: 50%;
+}
+#rule
+{
+    border-style: dashed;
+    width: 50%;
+    
+}
+.item
+{
+    float: left;
+    margin: 20px;
+}
+.title
+{
+    display: inline-block;
+}
+.btn
+{
+    padding: 10px;
+    background-color: #ff305b;
+    border-radius: 10%;
+    color: #fff;
+}
+.clr
+{
+    clear: both;
+}
+/* Services */
+.Services
+{
+    background-color: #f1f1f1;
+    padding: 40px 0px;
+    text-align: center;
+    margin: 10%;
+}
+.title
+{
+    padding: 20px;
+}
+.Services hr
+{
+    border-top: 1px solid #ff305b;
+  width: 30px;
+  margin: auto;
+  margin-top: 4px;
+}
+.serviceType
+{
+    float: left;
+    width: 25%;
+   
+}
+/* portfolio */
+
+.portfolio
+{
+    /* background-color: rgb(245, 119, 8); */
+    text-align: center;
+    
+}
+.portfolio hr
+{
+    border-top: 1px solid #ff305b;
+  width: 30px;
+  margin: auto;
+  margin-top: 4px;
+}
+.portfolio img
+{
+    width: 100%;
+    top: 0;
+    bottom: 10px;
+    opacity: 1;
+  transition: all 0.8s;
+    
+}
+.portfolio img:hover
+{
+    opacity: 0.5;
+}
+.portItem
+{
+    float: left;
+    width: 25%;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #f1f1f1;
+    
+}
+/* Testimonial */
+.Testimonial
+{
+   
+    text-align: center;
+    margin: 20px;
+}
+
+/* Blog */
+.Blog
+{
+    background-color: #f1f1f1;
+    padding: 50px;
+}
+.Blog .item
+{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+/* Contact */
+
+.Contact
+{
+    
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+  width: 70%;
+    
+}
+.Contact input
+{
+    width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border: solid 1px #9997;
+  border-radius: 5px;
+}
+.Contact button {
+    color: #fff;
+    background-color: #ff305b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.7s;
+}
+.Contact button:hover {
+    background-color: #ff3011;
+}
+.para
+{
+    float: left;
+    width: 45%; 
+}
+.paraTwo
+{
+    float: right;
+    width: 45%; 
+}
+/* footer */
+.footer
+{
+    text-align: center;
+    background-color: #333333;
+    width: 100%;
+    height: 100px;
+}
